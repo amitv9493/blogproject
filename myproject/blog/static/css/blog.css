@@ -2,10 +2,13 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif; 
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #F2DEBA;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 a { 
-    color:#00abff;
+    color:#820000;
     text-decoration:none; 
 }
 
@@ -14,7 +17,9 @@ h1 {
     border-bottom:1px solid #bbb;
     padding:0 0 10px 0;
 }
-
+h2:hover{
+    text-decoration-line: underline;
+}
 h2 {
     font-weight:normal;
     margin:30px 0 0;
@@ -35,7 +40,7 @@ h2 {
 }
 
 p.date { 
-    color:#ccc;
+    color:4E#6C50;
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic; 

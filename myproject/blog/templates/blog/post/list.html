@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 {% block title %}My Blog{% endblock title %}
+
 {% block content %}
 
     <h1>My Blog</h1>
@@ -14,4 +15,5 @@
         </p>
         {{post.body|truncatewords:30|linebreaks}}
     {% endfor %}
+    {% include "pagination.html" with page=page_obj %}
 {% endblock content %}
