@@ -1,3 +1,4 @@
+import os
 """
 Django settings for myproject project.
 
@@ -131,3 +132,5 @@ EMAIL_HOST_USER = 'amitdummy9493@gmail.com'
 EMAIL_HOST_PASSWORD = 'moxfbfewejtlrhoe'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
