@@ -1,3 +1,4 @@
+import os
 """
 Django settings for myproject project.
 
@@ -21,11 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-!2^)h*w70c)k6k!t%&@n8%a-s9$byz^c0tc9nqx1wjgp4xyk^q'
-
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://3.136.145.233/',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -131,3 +134,5 @@ EMAIL_HOST_USER = 'amitdummy9493@gmail.com'
 EMAIL_HOST_PASSWORD = 'moxfbfewejtlrhoe'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
