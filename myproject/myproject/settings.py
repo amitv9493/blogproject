@@ -27,8 +27,12 @@ CSRF_COOKIE_SECURE = True
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['http://3.136.145.233/',
                  '127.0.0.1']
+=======
+ALLOWED_HOSTS = ['http://3.136.145.233/']
+>>>>>>> 4891db0e2f4c481a049b64c7db1587d792e7caa3
 
 
 # Application definition
